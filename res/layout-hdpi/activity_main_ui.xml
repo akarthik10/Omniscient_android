@@ -1,0 +1,191 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainUI" >
+
+    
+    <ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp" >
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="false"
+    android:id="@+id/titleHolder" >
+    
+        <TextView
+        android:id="@+id/titleBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/title"
+        android:layout_centerVertical="true"
+        android:text=" "
+        android:textColor="#ffffff"
+        android:background="@color/blue"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_marginRight="5dp"
+        
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dp"
+        android:background="@color/grey"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="Omniscient"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+        
+        </RelativeLayout>
+    
+   
+    <EditText
+        android:id="@+id/inputQuery"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="65dp"
+        android:ems="12"
+        android:textSize="20sp"
+        android:hint="Please type your query here"  >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inputQuery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@color/grey"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:text="Submit" />
+
+    
+    
+    <TextView
+        android:id="@+id/textExamplesBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/textExamples"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/buttonSubmit"
+        android:text="  "
+        android:textColor="#ffffff"
+        android:background="@color/yellow"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/textExamples"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/buttonSubmit"
+        android:text="Need some examples?"
+        android:textColor="#ffffff"
+        android:background="@color/grey"
+        android:padding="15dp"
+        android:textSize="20sp" />
+    
+    
+     <TextView
+        android:id="@+id/settingsBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/settings"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/textExamples"
+        android:text="  "
+        android:textColor="#ffffff"
+        android:background="@color/orange"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/textExamples"
+        android:text="Settings"
+        android:textColor="#ffffff"
+        android:background="@color/grey"
+        android:padding="15dp"
+        android:textSize="20sp" />
+    
+    
+    <TextView
+        android:id="@+id/aboutBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/about"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/settings"
+        android:text="  "
+        android:textColor="#ffffff"
+        android:background="@color/blue"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="45dp"
+        android:layout_below="@+id/settings"
+        android:text="About"
+        android:textColor="#ffffff"
+        android:background="@color/grey"
+        android:padding="15dp"
+        android:textSize="20sp" />
+
+    </RelativeLayout>
+    </ScrollView>
+    
+</RelativeLayout>

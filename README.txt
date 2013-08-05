@@ -1,0 +1,1 @@
+Omniscient is an Android App based on the Wolfram|Alpha API that can effectively answer user queries. Visit http://akarthik10.wordpress.com for more details. Download the APK here : http://www.mediafire.com/?yvxthouavhfzziv

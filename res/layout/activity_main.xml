@@ -1,0 +1,98 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/bacgkground"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/mytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/hello"
+        android:textColor="@color/grey"
+        android:textSize="40sp" />
+    
+    
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+    android:id="@+id/name_box" >
+    <ImageView
+        android:id="@+id/nameinput"
+        android:contentDescription="@string/rect_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:drawable="@drawable/round_rect"  />
+        
+        
+        <EditText
+        android:id="@+id/editTextName"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:visibility="invisible" >
+
+        <requestFocus />
+    </EditText>
+        
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mytext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Next"
+        android:background="@color/grey"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="20sp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/nameShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/grey"
+        android:text="User"
+        android:visibility="invisible"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="44dp"
+        android:text="Loading.."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/grey" />
+
+ 
+        
+        
+      
+
+</RelativeLayout>
